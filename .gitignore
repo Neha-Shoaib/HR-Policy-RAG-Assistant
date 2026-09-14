@@ -1,8 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
+*.pyo
 
 # Virtual environments
 .venv/
@@ -10,28 +9,36 @@ venv/
 env/
 ENV/
 
-# Environment variables / secrets
+# Environment variables
 .env
 .env.*
+*.env
+
+# Streamlit secrets
 .streamlit/secrets.toml
 
-# Local Streamlit
-.streamlit/
-
-# IDEs
+# IDE files
 .vscode/
 .idea/
 
-# OS files
+# Operating system
 .DS_Store
 Thumbs.db
 
-# Uploaded/local documents
+# Uploaded documents
 *.pdf
 
-# FAISS/local indexes
+# FAISS indexes
 *.faiss
 *.index
 
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
 # Logs
 *.log
+
+# Temporary files
+*.tmp
+*.temp
